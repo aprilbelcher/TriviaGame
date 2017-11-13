@@ -34,7 +34,7 @@
   ];
 
   function buildQuiz() {
-    // we'll need a place to store the HTML output
+
     const output = [];
 
     // for each question...
@@ -54,7 +54,7 @@
         );
       }
 
-      // add this question and its answers to the output
+      //  this is question and its answers to the output
       output.push(
         `<div class="slide">
            <div class="question"> ${currentQuestion.question} </div>
@@ -175,7 +175,7 @@ var c_seconds = parseInt(total_seconds%60);
 
 
 function CheckTime(){
-	//document.getElementById("quiz-time-left").innerHTML='Time Left: ' + c_minutes + ' minutes ' + c_seconds + ' seconds' ;
+
 	if(total_seconds <=0){
 			setTimeout(showNextSlide(),1);
         }else {    
@@ -199,7 +199,6 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        //display.textContent = minutes + ":" + seconds;
 display.textContent = seconds;
 
         if (--timer < 0) {
